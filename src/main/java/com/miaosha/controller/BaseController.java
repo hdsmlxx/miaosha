@@ -47,7 +47,7 @@ public class BaseController {
             responseData.put("errCode", EmBusinessError.UNKNOWN_ERROR.getErrorCode());
             responseData.put("errMsg", EmBusinessError.UNKNOWN_ERROR.getErrMsg());
             responseData.put("ex", exception);
-
+            System.out.println();
         }
 
         return CommonReturnType.create(responseData, "fail");
